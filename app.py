@@ -6,8 +6,6 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "PASSWORD"
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
 
-
-
 db = SQLAlchemy(app)
 app.app_context().push()
 
