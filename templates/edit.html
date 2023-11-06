@@ -1,0 +1,12 @@
+{%extends "base.html"%} {%block main%}
+<div class="container-fluid">
+  <form action="{{ url_for('edit', task_id=task_id)}}" method="post">
+    {{form.hidden_tag() }}
+    <div class="row">
+      <h3>Editar tarea</h3>
+      <div class="col">{{form.title(class="form-control")}}</div>
+      <div class="col">{{form.submit(class="btn btn-primary")}}</div>
+    </div>
+  </form>
+</div>
+{%endblock%}
