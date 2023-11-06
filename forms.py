@@ -5,5 +5,6 @@ class AddTaskForm(FlaskForm):
     title = StringField("Title")
     submit = SubmitField("Submit")
     
+    
 class DeleteTaskForm(FlaskForm):  
     submit = SubmitField("Eliminar")
